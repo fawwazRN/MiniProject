@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "space grotesk";
+  padding: 0 70px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  list-style: none;
+}
+h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h2 {
+  font-size: 40px;
+  padding: 0 7px;
+  border-radius: 7px;
+  background-color: #b9ff66;
+}
+h3{
+  font-size: 30px;
+}
+.green {
+  padding: 0 7px;
+  border-radius: 7px;
+  background-color: #b9ff66;
+}
+.white {
+  padding: 0 7px;
+  border-radius: 7px;
+  background-color: white;
+}
+.judul {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  padding: 30px 0;
+}
+header .logo {
+  width: 35%;
+}
+header .logo img {
+  width: 400px;
+}
+header .nav {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav nav {
+  width: 75%;
+}
+header .nav nav ul li {
+  display: flex;
+  gap: 30px;
+}
+header .nav .quote {
+  border-radius: 8px;
+  border: 3px solid black;
+  padding: 15px 35px;
+  text-align: center;
+}
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .teks-hero {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#hero .teks-hero p {
+  line-height: 28px;
+}
+.btn-hero {
+  color: white;
+  background-color: black;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 30%;
+  height: 10%;
+  text-align: center;
+}
+#hero .image-hero {
+  width: 50%;
+}
+#services {
+  margin-top: 140px;
+}
+#services .judul{
+  margin-bottom: 50px;
+}
+.card-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.card-services .card {
+  display: flex;
+  padding: 50px;
+  width: 48%;
+  border-radius: 45px;
+  border: 1px solid #191A23;
+  box-shadow: 0px 5px 0px 0px #191A23;
+  gap: 40px;
+}
+.white-card{
+  background-color: #F3F3F3;
+}
+.green-card{
+  background-color: #B9FF66;
+}
+.black-card{
+  background-color: #191A23;
+}
+.white-teks{
+  color: white;
+}
+.card-services .card .judul-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-services .card .gambar-card img {
+  height: 210px;
+}
+.learn-more {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+}
+.mini-card{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background-color: #F3F3F3;
+  height: 350px;
+  border-radius: 30px;
+  margin-top: 70px;
+}
+.teks-mini{
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  width: 50%;
+}
+.img-mini img{
+  height: 300px;
+}
