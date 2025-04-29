@@ -26,7 +26,7 @@ h2 {
   border-radius: 7px;
   background-color: #b9ff66;
 }
-h3{
+h3 {
   font-size: 30px;
 }
 .green {
@@ -44,14 +44,20 @@ h3{
   justify-content: baseline;
   align-items: center;
   gap: 30px;
-  width: 70%;
+  padding-right: 20%;
 }
 header {
   display: flex;
   justify-content: center;
+  width: 100%;
   gap: 80px;
   align-items: center;
-  padding: 30px 0;
+  padding: 10px 70px;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  top: 0;
+  left: 0;
 }
 header .logo {
   width: 35%;
@@ -77,11 +83,18 @@ header .nav .quote {
   border: 3px solid black;
   padding: 15px 35px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+header .nav .quote:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 #hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 125px;
 }
 #hero .teks-hero {
   width: 50%;
@@ -107,7 +120,7 @@ header .nav .quote {
 #services {
   margin-top: 140px;
 }
-#services .judul{
+#services .judul {
   margin-bottom: 50px;
 }
 .card-services {
@@ -123,20 +136,21 @@ header .nav .quote {
   padding: 50px;
   width: 48%;
   border-radius: 45px;
-  border: 1px solid #191A23;
-  box-shadow: 0px 5px 0px 0px #191A23;
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px 0px #191a23;
   gap: 40px;
+  transition: all 0.3s ease-in-out;
 }
-.white-card{
-  background-color: #F3F3F3;
+.white-card {
+  background-color: #f3f3f3;
 }
-.green-card{
-  background-color: #B9FF66;
+.green-card {
+  background-color: #b9ff66;
 }
-.black-card{
-  background-color: #191A23;
+.black-card {
+  background-color: #191a23;
 }
-.white-teks{
+.white-teks {
   color: white;
 }
 .card-services .card .judul-card {
@@ -153,23 +167,85 @@ header .nav .quote {
   align-items: center;
   gap: 20px;
 }
-.mini-card{
+.mini-card {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 60px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   height: 350px;
   border-radius: 30px;
   margin-top: 70px;
 }
-.teks-mini{
+.teks-mini {
   display: flex;
   flex-direction: column;
   row-gap: 26px;
   width: 50%;
 }
-.img-mini img{
+.img-mini img {
   height: 300px;
+  animation: upAndDown 2s infinite;
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  } /* Posisi awal */
+  50% {
+    transform: translateY(-50px);
+  } /* Bergerak ke atas */
+  100% {
+    transform: translateY(0);
+  } /* Kembali ke posisi awal */
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
+#studycases {
+  margin-top: 100px;
+}
+#studycases .judul {
+  margin-bottom: 50px;
+}
+.black-box {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.black-box .teks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: space-between;
+  transition: all 700ms ease-in-out;
+
+}
+.black-box .teks a {
+  color: #b9ff66;
+}
+.black-box .garis {
+  width: 3px;
+  min-height: 150px;
+  background-color: white;
+}
+.black-box .teks:hover{
+  width: 150%;
+  transition: all 700ms ease-in-out;
+}
+footer{
+  margin: 0 auto;
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  margin-top: 100px;
+  border-radius: 20px 20px 0 0;
 }
